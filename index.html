@@ -1,29 +1,26 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-    <Head>
-    <title>Paranormal.com</title>
+    <head>
+    <title>Password</title>
     <style>
-        .text
-        {
-            border: 2px red;
+        body{
+            background: 30pt cyan;
         }
     </style>
-    </Head>
+    <script>
+        function checkPassword(){
+var Password = document.getElementById("passwordBox")
+var passwordText = Password.value
+if(Password == X1Y2Z3k){
+    return true;
+}
+alert("Access Denied!Incorrect Password!")
+return false;
+        }
+    </script>
+    </head>
     <body>
-        <div style="background-color:aquamarine; font-size: 35px; background-size: 50px; text-align: center; border: 5px dotted red">
-            <p>Paranormal.com</p>
-        </div>
-        <div style="background-color:gold; border: 3px green;">
-        <p>LESSON ONE:The Ba, the Ka, and the Ankh</p>
-        </div>
-        <div style="text-align: center;">
-<p>BA=SOUL
-   KA=SPIRIT
-   ANKH=EVILS
-</p>
-        </div>
-<p class ="text">
-BA+KA+ANKH=Human(Homo Sapiens Sapiens)
-</p>
+        <p>PASSWORD:<input id:passwordBox type="password"/></p>
+        <a href="https://www.google.com" onclick="return checkPassword"></a>
     </body>
 </html>
