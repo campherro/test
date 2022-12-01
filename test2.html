@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>ADVENTURE"AWAITS</title>
-    <style>
-        body{
-         background: 30pt goldenrod;
-        }
-    </style>
-    <script>
-        function clickOn() {
-            return true;
-        }
-        function chooseThis(){
-            alert("Are you sure?");
-            return clickOn();
-        }
-    </script>
+        <title>To-do List App</title>
+        <script>
+            function addItem(){
+                var newItem = document.createElement("div");
+                newItem.innerHTML = document.getElementById("box").value;
+                getElementById("list").appendChild("newItem");
+                saveItem();
+            }
+            function removeItem(){
+              onclick.newItem = ("newItem").removeChild;
+              saveItem();
+            }
+            function savelist(){
+                localStorage.storedList = document.getElementById("list").innerHTML;
+            }
+            function loadList(){
+                document.getElementById("list").innerHTML = localStorage.storedList;
+            }
+        </script>
     </head>
     <body>
-        <a href="page2.html" onclick="return chooseThis()">Go to Forest</a>
+      <input type="text" id="box" value="Type Here";/>
+      <br/>
+      <input type="button" value="Add Item" onclick = "addItem()";/>
+      <div id="list"></div>
     </body>
 </html>
