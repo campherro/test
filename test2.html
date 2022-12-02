@@ -18,6 +18,9 @@
             }
             function loadList(){
                 document.getElementById("list").innerHTML = localStorage.storedList;
+                if(localStorage.storedList) {
+                    loadList();
+                }
             }
         </script>
     </head>
