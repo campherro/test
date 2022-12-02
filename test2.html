@@ -11,21 +11,21 @@
             }
             function removeItem(){
               onclick.newItem = ("newItem").removeChild;
-              saveItem();
+              savelist();
             }
             function savelist(){
                 localStorage.storedList = document.getElementById("list").innerHTML;
             }
             function loadList(){
                 document.getElementById("list").innerHTML = localStorage.storedList;
+            }
                 if(localStorage.storedList) {
                     loadList();
                 }
-            }
         </script>
     </head>
     <body>
-      <input type="text" id="box" value="Type Here";/>
+      <input type="text" id="box" value="Type Here"/>
       <br/>
       <input type="button" value="Add Item" onclick = "addItem()";/>
       <div id="list"></div>
