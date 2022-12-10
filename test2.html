@@ -1,34 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>To-do List App</title>
-        <script>
-            function addItem(){
-                var newItem = document.createElement("div");
-                newItem.innerHTML = document.getElementById("box").value;
-                getElementById("list").appendChild(newItem);
-                newItem.onclick = removeItem
-                savelist();
-            }
-            function removeItem(){
-              document.getElementById("list").removeChild;
-              savelist();
-            }
-            function savelist(){
-                localStorage.storedList = document.getElementById("list").innerHTML;
-            }
-            function loadList(){
-                document.getElementById("list").innerHTML = localStorage.storedList;
-            }
-                if(localStorage.storedList) {
-                    loadList();
-                }
-        </script>
+    <title>Science.com</title>
+    <style>
+        body{
+            background: 30pt goldenrod;
+        }
+    </style>
+    <script>
+    </script>
     </head>
     <body>
-      <input type="text" id="box" placeholder="Type Here"/>
-      <br/>
-      <input type="button" value="Add Item" onclick = "addItem()";/>
-      <div id="list"></div>
+        <h1>Science Journal</h1>
+        <p>Catogories of Science</p>
+        <a href="Astrology.html">Astrology</a>
+        <a href="Astronomy.html">Astronomy</a>
+        <a href="Mathematics.html">Mathematics</a>
     </body>
 </html>
