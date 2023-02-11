@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Science.com</title>
+    <title>Game</title>
     <style>
         .body{
             background: 30pt goldenrod;
         }
+        .character{
+            background-color: aquamarine;
+        }
+        #visible{
+            display: block;
+        }
     </style>
-    <script>
-        function howTo(){
-            alert("Click on one of the categories.")
-        }
-        howTo()
-        function A2(){
-            document.getElementById("A")
-            document.createElement("div").innerHTML="Ho ho ho!"
-            document.appendChild
-        }
-    </script>
     </head>
     <body>
-        <bdo dir="rtl">Science Journal</bdo>
-        <input id="button" type="button" value="How to use" onclick="howTo()"/>
-        <em>Catogories of Science:</em>
-        <ol><a href="https:Astrology.html">Astrology</a></ol>
-        <ol><a href="https:Astronomy.html">Astronomy</a></ol>
-        <ol><a href="https:Mathematics.html">Mathematics</a></ol>
-        <div id="A"></div>
+     <div id="visible">
+      <div id="number" class="character"></div>
+     </div>
+     <script>
+     var count=0
+     function timer(){
+        count++
+         if(count<12){
+         document.getElementById("number").innerHTML=count
+        }
+        else{
+            alert("GAME OVER!")
+        }
+        setTimeout(timer,1000)
+     } 
+     </script>
     </body>
 </html>
